@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            float: left;
+            padding: 10px;
+            width: 70px;
+            height: 30px;
+            text-align: center;
+        }
+        li:hover{
+            background: white;
+        }
+        li:first-child{
+            border-radius: 30px 0px 0px 30px;
+        }
+        li:last-child{
+            border-radius: 0px 30px 30px 0px;
+        }
+        /* li 중에서 짝수인것 */
+        li:nth-child(2n){
+            background: cornflowerblue;
+        }
+        /* li 중에서 홀수인것 */
+        li:nth-child(2n+1){
+            background: gray;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        div{
+            font-weight: bold;
+            font-size: 15px;
+            color: black;
+        }
+        #top{
+            width: 800px;
+            height: 100px;
+            background:black;
+        }
+        #top2{
+            background: gray;
+            color: cornflowerblue;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            
+        }
+        #total{
+            width: 800px;
+            height: 800px;
+            background: cornflowerblue;
+        }
+        td{
+            width: 220px;
+            height: 120px;
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="page4.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page5.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page6.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page7.html">장바구니</a>
+                </li>
+            
+            </ul>
+        </div>
+        <div id="top2">
+고정된화면이 보이는 부분
+        </div>
+        <div id="center">
+             <table border="1">
+                <tr>
+                    <td>1</td>
+                    <td>운동화1</td>
+                    <td>100000원</td>
+                    <td><img src="이미지/나이키 (1).png" width="155px"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>샌들</td>
+                    <td>100000원</td>
+                    <td><img src="이미지/나이키 (6).png" width="155px"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>슬리퍼</td>
+                    <td>100000원</td>
+                    <td><img src="이미지/나이키 (3).png" width="155px"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>운동화2</td>
+                    <td>100000원</td>
+                    <td><img src="이미지/나이키 (4).png" width="155px"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>운동화3</td>
+                    <td>100000원</td>
+                    <td><img src="이미지/나이키 (5).png" width="155px"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

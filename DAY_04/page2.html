@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면나누기</title>
+    <style>
+        div{
+            color: thistle;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #d1{
+            border-top: 5px solid violet;
+            border-bottom: 5px solid violet;
+        }
+        #d2{
+            color: thistle;
+            font-size: 30px;
+            font-weight: bold;
+            width: 500px;
+            background: lightslategray;
+            border: 30px inset thistle;
+            border-radius: 100px;
+        }
+        .d2{
+            width: 600px;
+            background: lightslategray;
+            margin: 30px; /* 바깥쪽의 여백, 4군데 모두 */
+            padding: 30px; /*안쪽의 여백, 4군데 모두 */
+            border-radius: 110px 20px; 
+            /* 모서리의 번호대로 순서대로 설정 1, 2, 3, 4 */
+            /* 패턴이 동일한 경우 1, 2 의 패턴을 그대로 3, 4번으로 적용 */
+            border: 30px outset thistle;
+            box-shadow: 10px 10px lightslategray;
+            box-shadow: -10px -10px lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" align="center">
+        첫번째 메뉴가 들어갈 부분<br>
+        두번째 메뉴가 들어갈 부분<br>
+        세번재 메뉴가 들어갈 부분<br>
+    </div>
+    <div class="d2">
+        오늘은 비가 많이 와서 습도가 매우 높다<br>
+        심지어 오늘의 날씨가 더워서 매우 습하다
+    </div>
+    <div class="d2">
+        내일은 비가 아침에 올것이고<br>
+        오후에는 먹구름이 낀 상태일것이다
+    </div>
+    <div id="d2" align="center">
+        봄처럼 따뜻했던 그때가 좋았어<br>
+        너 하나로 충분했던 그때가 좋았어<br>
+        헤어지고 나서야 깨닫게 됐어<br>
+        참 좋았구나 참 예뻤구나 우리<br>
+        지난날에 그때가 참 좋았어<br>
+    </div>
+</body>
+</html>
