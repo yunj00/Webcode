@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function rec() {
+            가로값 = document.getElementById("n1").value
+            세로값 = document.getElementById("n2").value
+            가 = parseInt(가로값)
+            세 = parseInt(세로값)
+            alert("사각형의넓이는 "+(가 * 세) + "입니다.")
+        }
+        function cir() {
+            반지름 = document.getElementById("r").value
+            r = parseInt(반지름)
+            alert("원의 넓이는 " + (r * r * 3.14))
+        }
+    </script>
+</head>
+<body>
+    가로값: <input type="text" id="n1"><br>
+    세로값: <input type="text" id="n2"><br>
+    <br>
+    <button onclick="rec()">넓이구하기</button>
+    <hr>
+    반지름: <input type="text" id="r"><br>
+    <br>
+    <button onclick="cir()">넓이구하기(파이 = 3.14)</button>
+</body>
+</html>
