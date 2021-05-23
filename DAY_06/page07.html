@@ -1,0 +1,34 @@
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "과목별 점수", { role: "style" } ],
+        ["과학", 100, "#3ab059"],
+        ["수학", 100, "#a0ebdc"],
+        ["영어", 98.5, "gray"],
+        ["컴퓨터", 97, "#b9c9c6"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "나의성적 그래프",
+        width: 800,
+        height: 600,
+        bar: {groupWidth: "95%"},
+        legend: { position: "right" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+<div id="columnchart_values" style="width: 900px; height: 300px;"></div>

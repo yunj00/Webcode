@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function user() {
+            user = document.getElementById('user').value
+            if (user == "제주도") {
+                result.innerHTML = '비행기 타고가야됩니다'
+            } else {
+                result.innerHTML = "아니면 바다로 가요!"
+            }
+        }
+    </script>
+</head>
+<body>
+    가고싶은곳: <input type="text" id="user" onblur="user()">
+    <br>
+    <div id="result"></div>
+    <br>
+    <hr>
+
+</body>
+</html>

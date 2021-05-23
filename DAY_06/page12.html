@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function go() {
+            b1 = document.getElementById('b1').value
+            b2 = document.getElementById('b2').value
+
+            if (b1 == b2) {
+                alert('비밀번호가 일치합니다')
+            } else {
+                alert("비밀번호가 일치하지 않습니다. 다시시도해 주세요")
+            }
+        }
+    </script>
+</head>
+<body>
+    비밀번호 입력: <input type="text" id="b1"><br><br>
+    비밀번호 재확인: <input type="text" id="b2"><br><br>
+    <button onclick="go()">비밀번호 확인</button>
+
+</body>
+</html>

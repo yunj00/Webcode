@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function text1() {
+            //글자 추가 버튼을 누르면 이부분이 처리
+            result.innerHTML = '내가 글자'
+        }
+        function text2() {
+            //id가 word에 입력한 값을 갖고 와야 한다.
+            //가지고 온 값을  reslut에 넣어주면 됨
+            word = document.getElementById('word').value
+            result.innerHTML = '<font color=blue>' + word +'</font>'
+            
+        }
+        function text3() {
+            result2.innerHTML = '나도글자'
+        }
+        function img() {
+            //이미지 추가 버튼을 누루면 이부분이 처리
+            result.innerHTML = "<img src=img/라이언.png>"
+        }
+    </script>
+</head>
+<body>
+    <button style="background: violet;" onclick="text1()">글자추가1</button>
+    <button style="background: slateblue;" onclick="text2()">글자추가2</button>
+    <button style="background: slategrey;" onclick="text3()">글자추가3</button>
+    <button style="background: turquoise;" onclick="img()">이미지추가</button>
+        
+    <hr color="black">
+
+    하고 싶은말: <input type="text" id="word">
+    <div id="result"></div>
+    <div id="result2"></div>
+
+</body>
+</html>

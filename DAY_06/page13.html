@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function M() {
+            money = document.getElementById('money').value
+            m2 = parseInt(money)
+            m3 = m2 * (4/5)
+            alert('금액은 ' + m3 + '원입니다.')
+        }
+    </script>
+</head>
+<body>
+    금액을 입력하세요: <input type="text" id="money"><br><br>
+    <button onclick="M()">금액의 80% 구하기</button>
+</body>
+</html>
