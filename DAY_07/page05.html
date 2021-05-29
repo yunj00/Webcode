@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+      //document.getElementById('accordion') 는 밑에 줄과 같은 말이다.(jquery).
+      //$를 사용할수 있는 프로그램을 링크로 건다. 줄9
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  <style>
+      body{
+          background-image: url(img/pastel.png);
+          color: dimgray;
+      }
+      h3{
+          color: dimgray;
+          font-size: large;
+      }
+      h3:hover{
+          font-size: xx-large;
+      }
+  </style>
+</head>
+<body align="center">
+ 
+<div id="accordion">
+  <h3>나에 대해서</h3>
+  <div>
+    <p>
+    안녕하세요 저의 이름은 최연주 이고 현재 중학교를 재학중입니다. 저는 현재 컴퓨터에 관해 
+    배우고 있고 수학을 매우 좋아합니다. 과학도 좋아하긴 하지만 수학만큼은 좋아하지는 
+    않습니다. 
+    </p>
+  </div>
+  <h3>나의 취미</h3>
+  <div>
+    <p>
+    저의 취미는 운동입니다. 모든 종류의 운동 아님 활동적이고 움직임을 많이 하는것을 좋아합니다. 취미중에 코딩이 있습니다. 
+    휴식 시간에 보통 음악을 들으면서 코딩을 하고 있습니다. 코딩이 은근 스트레스를 풀게 하더라고요. 좋아하는 아이돌은 딱히 없는데 
+    배우중에서는 서강준,공유,강동원을 좋아합니다.
+    </p>
+  </div>
+  <h3>나의 시간표</h3>
+  <div>
+      <table align="center">
+          <tr>
+              <td>1.아침먹기</td>
+          </tr>
+          <tr>
+            <td>2.책읽기</td>
+          </tr>
+          <tr>
+            <td>3.영어 공부하기</td>
+          </tr>
+          <tr>
+            <td>4.바이올린 연습하기</td>
+          </tr>
+      </table>    
+  </div>
+  <h3>내가 자주가는 사이트</h3>
+  <div>
+    <p>
+    밑에 있는 사이트는 제가 자주 이용하는 사이트입니다..!
+    </p>
+   <a href="https://comic.naver.com/main.nhn">네이버웹툰</a><br><br>
+   <a href="https://www.youtube.com/">유튜브</a><br><br>
+   <a href="https://www.google.com/?hl=ko">구글</a>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>

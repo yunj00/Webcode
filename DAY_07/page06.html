@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            //jquery 프로그래밍
+
+            //b1을 클릭했을때
+            //user에 있는 값을 가지고와서
+            //아이디가 맞는 확인한후 div에 표시
+            $('#b1').click(function () {
+                user = $('#user').val()
+                if (user == 'root') {
+                    $('#d2').html('<font color=green>아이디 성공✔</font>')
+                }
+                else {
+                    $('#d2').html('<font color=red>아이디 실패✖</font>')
+                }
+            })
+            //pw2를 치고 키를 올렸을때
+            $('#pw2').keyup(function () {
+                //pw1의 값과 pw2의 값을 가지고 와서
+                pw1 = $('#pw1').val()
+                pw2 = $('#pw2').val()
+                //동일한지 비교한 다음 결과를 div에 표시해보자
+                if (pw1 == pw2) {
+                    $('#d1').html('<font color=green>비밀번호가 일치합니다✔</font>')
+                } else {
+                    $('#d1').html('<font color=red>비밀번호가 불일치합니다✖ 다시 확인해주세요.</font>')
+                }
+            })
+
+            alert('jquery 시작합니다.')
+        })
+    </script>
+</head>
+<body align="center">
+    <h1>PASSWORD</h1>
+    <hr>
+    비밀번호: <input type="text" id="pw1"><br>
+    비밀번호 확인: <input type="text" id="pw2"><br>
+    <hr>
+    <div id="d1"></div>
+    사용자 아이디: <input type="text" id="user"><br><br>
+    <button id="b1">아이디 확인하기</button>
+    <div id="d2"></div>
+    <hr>
+</body>
+</html>
