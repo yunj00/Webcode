@@ -1,0 +1,9 @@
+h1:hover{
+    font-size: 55px;
+}
+a{
+    text-decoration: none;
+    color: grey;
+    font: bolder;
+    font-size: 30px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMPAGE</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="out.css">
+    <script>
+           alist = '<a href="취미.html">나의 취미 생활</a><br><br><a href="카카오.html">내가 좋아하는 캐릭터</a><br><br><a href="시간표.html">하루 시간표</a><br><br><a href="노래.html">자주 듣는 노래</a><br><br><a href="음식.html">좋아하는 음식</a><br><br>'
+           $(function() {
+               $('#b1').click(function() {
+                   $('#d1').html(alist)
+               })
+           })
+    </script>
+    <style>
+        body{
+            background: #eedaf0;
+            color: grey;
+        }
+        a{
+            text-decoration: none;
+            color: grey;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body align="center">
+    <h1>연주's HOMAPAGE</h1>
+    <hr color="grey">
+    <img src="img/오구.png" height="500" width="500"><br><br>
+    <button id="b1" style="color: gray; font-size: xx-large;">목록보기</button><br><br>
+    <div id="d1"></div>
+  
+</body>
+</html>

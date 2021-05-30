@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        $(function () { //익명함수
+            //b1을 눌렀을때 msn사이트와 비동기 통신
+            $('#b1').click(function () {
+                //b1을 클릭했을때 처리내용
+                //msn.com사이트로 비동기통신
+                //성공했을떄, 연결성공!!
+                //실패했을때, 연결실패!!
+                $.ajax({
+                    url: "http://www.msn.com",
+                    success: function () {
+                        alert('사이트 연결 성공!!')
+                    },
+                    error: function () {
+                        alert('사이트 연결 실패!!')
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="b1">msn사이트 비동기통신하기</button>
+</body>
+</html>
